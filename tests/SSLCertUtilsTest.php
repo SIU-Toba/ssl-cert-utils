@@ -1,12 +1,14 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Created by IntelliJ IDEA.
  * User: andres
  * Date: 24/09/15
  * Time: 18:08
  */
-class SSLCertUtilsTest extends PHPUnit_Framework_TestCase
+class SSLCertUtilsTest extends TestCase
 {
     public function testGetCN()
     {
