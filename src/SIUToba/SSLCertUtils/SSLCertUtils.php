@@ -48,10 +48,10 @@ class SSLCertUtils
         }
     }
 
-    public function getFingerprint()
+    public function getFingerprint(string $algo='sha1')
     {
         $this->checkLoaded();
-        return sha1($this->getBase64());
+		return hash($algo, $this->getBase64());
     }
 
     protected function checkLoaded()
